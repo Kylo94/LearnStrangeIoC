@@ -4,4 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/StrangeIoC/examples/Assets/scenes/multiplecontexts/game.unity
+    guid: 63cc202a6aefd4364ab9d942a24c0716
+  - enabled: 1
+    path: Assets/StrangeIoC/examples/Assets/scenes/multiplecontexts/main.unity
+    guid: c8ed8038df3b647b68e612bd6fde86e0
+  - enabled: 1
+    path: Assets/StrangeIoC/examples/Assets/scenes/multiplecontexts/social.unity
+    guid: ca117a9bbd0d14ec294e0e9ae05a2103
+  - enabled: 1
+    path: Assets/StrangeIoC/examples/Assets/scenes/myfirstproject/TestView.unity
+    guid: ff1e6d4f6cbc84088b859d53c36712ad
+  - enabled: 1
+    path: Assets/StrangeIoC/examples/Assets/scenes/signalsproject/TestSignalsView.unity
+    guid: ca9a47e876b1b4afcbae32e094a8f3fe
