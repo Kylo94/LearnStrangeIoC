@@ -2,5 +2,5 @@ bin/
 debug/
 Library/
 Temp/
-.csproj
-.sln
+*.csproj
+*.sln
