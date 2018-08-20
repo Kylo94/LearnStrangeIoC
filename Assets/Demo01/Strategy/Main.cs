@@ -7,14 +7,15 @@ namespace Assets.Demo01.Strategy
         void Start()
         {
             Player p = new Player();
-            p.buy(1000);
-            Debug.Log("Pay : " + p.CalLastAmount());
-            p.buy(1000);
-            Debug.Log("Pay : " + p.CalLastAmount());
-            p.buy(1000);
-            Debug.Log("Pay : " + p.CalLastAmount());
-            p.buy(1000);
-            Debug.Log("Pay : " + p.CalLastAmount());
+            CalPriceFactory.getInstance();
+            //p.buy(1000);
+            //Debug.Log("Pay : " + p.CalLastAmount());
+            //p.buy(1000);
+            //Debug.Log("Pay : " + p.CalLastAmount());
+            //p.buy(1000);
+            //Debug.Log("Pay : " + p.CalLastAmount());
+            //p.buy(1000);
+            //Debug.Log("Pay : " + p.CalLastAmount());
         }
     }
 }

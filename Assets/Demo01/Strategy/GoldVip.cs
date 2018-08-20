@@ -1,5 +1,6 @@
 ﻿namespace Assets.Demo01.Strategy
 {
+    [PriceRegion(max: 3000)]
     public class GoldVip : CalPrice
     {
         public float calPrice(float price)

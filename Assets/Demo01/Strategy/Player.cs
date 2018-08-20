@@ -2,25 +2,25 @@
 {
     public class Player
     {
+        private float amount;
         private CalPrice calPrice = new Orgnic();
-        private float totalAmount = 0f;
-        private float amount = 0f;
+        private float totalAmount;
 
         public void buy(float amount)
         {
             this.amount = amount;
             totalAmount += amount;
-            if (totalAmount >= 3000)
-                calPrice = new GoldVip();
-            else if (totalAmount >= 2000)
-                calPrice = new SuperVip();
-            else if (totalAmount >= 1000)
-                calPrice = new Vip();
+            calPrice = CalPriceFactory.getInstance().createCalPrice(this);
         }
 
         public float CalLastAmount()
         {
             return calPrice.calPrice(amount);
+        }
+
+        public float getTotalAmount()
+        {
+            return totalAmount;
         }
     }
 }
