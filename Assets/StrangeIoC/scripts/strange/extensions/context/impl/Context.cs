@@ -28,7 +28,6 @@
 
 using strange.extensions.context.api;
 using strange.framework.impl;
-using UnityEngine;
 
 namespace strange.extensions.context.impl
 {
@@ -62,7 +61,7 @@ namespace strange.extensions.context.impl
 			SetContextView(view);
 			addCoreComponents();
 			this.autoStartup = (flags & ContextStartupFlags.MANUAL_LAUNCH) != ContextStartupFlags.MANUAL_LAUNCH;
-            if ((flags & ContextStartupFlags.MANUAL_MAPPING) != ContextStartupFlags.MANUAL_MAPPING)
+			if ((flags & ContextStartupFlags.MANUAL_MAPPING) != ContextStartupFlags.MANUAL_MAPPING)
 			{
 				Start();
 			}
@@ -70,11 +69,6 @@ namespace strange.extensions.context.impl
 
 		public Context (object view) : this (view, ContextStartupFlags.AUTOMATIC){}
 		
-        /// <summary>
-        /// 构造Text
-        /// </summary>
-        /// <param name="view">Root</param>
-        /// <param name="autoMapping">true为手动映射，false为手动开始and手动映射</param>
 		public Context (object view, bool autoMapping) : this(view, (autoMapping) ? ContextStartupFlags.MANUAL_MAPPING : ContextStartupFlags.MANUAL_LAUNCH | ContextStartupFlags.MANUAL_MAPPING)
 		{
 		}

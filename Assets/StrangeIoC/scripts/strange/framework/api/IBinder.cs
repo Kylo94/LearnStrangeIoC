@@ -40,7 +40,7 @@ namespace strange.framework.api
 {
 	public interface IBinder
 	{
-		/// Bind a Binding Key to a class or interface generic
+		/// 将绑定Key绑定到类或者通用接口上
 		IBinding Bind<T>();
 
 		/// Bind a Binding Key to a value
